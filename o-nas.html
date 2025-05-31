@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O nas - Cezart</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+
+        body {
+            font-family: 'Playfair Display', serif;
+            background-color: #f8f8f8;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 50px auto;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+            border-radius: 10px;
+            box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
+            opacity: 0;
+            animation: fadeIn 1.5s ease-out forwards;
+        }
+
+        h1 {
+            font-size: 36px;
+            color: #333;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 18px;
+            color: #666;
+            line-height: 1.6;
+            transition: color 0.3s ease-in-out;
+        }
+
+        p:hover {
+            color: #333;
+        }
+
+        .underline {
+            width: 80px;
+            height: 4px;
+            background: #333;
+            margin: 10px auto;
+            animation: lineExpand 1.5s ease-in-out infinite alternate;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes lineExpand {
+            from {
+                width: 40px;
+            }
+            to {
+                width: 100px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Cezart – Sztuka Ekskluzywnych Powierzchni</h1>
+        <div class="underline"></div>
+        
+        <p>Od ponad dwóch dekad doskonalimy sztukę dekoracyjnych tynków, nadając wnętrzom prestiżowy charakter na rynkach zagranicznych. 
+        Każda powierzchnia, którą tworzymy, to efekt precyzji, doświadczenia i nieustannego dążenia do perfekcji.</p>
+        
+        <p>Rok 2025 otwiera nowy rozdział w naszej historii – z dumą rozpoczynamy działalność w Polsce, przenosząc światowe standardy i kunszt rzemiosła na rodzime przestrzenie. 
+        Łączymy pasję z innowacją, aby każda realizacja była wyrazem luksusu, elegancji i unikalnego stylu.</p>
+
+        <p><strong>Tworzymy nie tylko tynki – kreujemy emocje, nadajemy przestrzeniom charakter i definiujemy ekskluzywność w jej najczystszej formie.</strong></p>
+
+        <p><strong>Zapraszamy do świata Cezart.</strong></p>
+    </div>
+
+</body>
+</html>

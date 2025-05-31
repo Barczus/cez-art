@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt</title>
+    <style>
+        body {
+            font-family: 'Roboto', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #005f73;
+            color: white;
+        }
+        header h1 {
+            font-size: 36px;
+            margin: 0;
+            animation: glow 3s infinite alternate;
+        }
+        @keyframes glow {
+            0% { color: #94d2bd; }
+            50% { color: #e9d8a6; }
+            100% { color: #ee9b00; }
+        }
+        main {
+            padding: 20px;
+            max-width: 900px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        .contact-card {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            display: inline-block;
+            text-align: center;
+            width: 80%;
+        }
+        .contact-card h2 {
+            color: #0a9396;
+            font-size: 26px;
+            margin-bottom: 15px;
+            animation: text-move 3s infinite alternate;
+        }
+        @keyframes text-move {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); color: #e9d8a6; }
+            100% { transform: scale(1); color: #ee9b00; }
+        }
+        .contact-card p {
+            font-size: 20px;
+            color: #333;
+            margin: 10px 0;
+        }
+        .phone-number {
+            font-size: 24px;
+            font-weight: bold;
+            color: #ee9b00;
+        }
+        .email {
+            font-size: 22px;
+            font-weight: bold;
+            color: #0a9396;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        .email:hover {
+            color: #e9d8a6;
+        }
+        .logo-container {
+            text-align: center;
+            margin: 40px 0 20px;
+        }
+        .logo-container img {
+            max-width: 200px;
+            height: auto;
+        }
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #005f73;
+            color: white;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Kontakt z Cez-Art</h1>
+    </header>
+    <main>
+        <div class="contact-card">
+            <h2>Skontaktuj się z nami</h2>
+            <p>Masz pytania? Zadzwoń lub napisz!</p>
+            <p class="phone-number">📞 514-423-759</p>
+            <p class="phone-number">📞 515-292-536</p>
+            <p>
+                📧 <a href="mailto:barczus84@gmail.com" class="email">barczus84@gmail.com</a>
+            </p>
+        </div>
+    </main>
+
+    <!-- Sekcja z logo na dole -->
+    <div class="logo-container">
+        <img src="Logo Decor-Art.png" alt="Logo firmy Cez-Art">
+    </div>
+
+    <footer>
+        © 2025 Cez-Art - Wszystkie prawa zastrzeżone
+    </footer>
+</body>
+</html>
+</html>

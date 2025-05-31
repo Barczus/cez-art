@@ -1,0 +1,66 @@
+html
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O nas - Cezart</title>
+    <style>
+        body {
+            font-family: 'Playfair Display', serif; /* Elegancka typografia */
+            background-color: #f8f8f8;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        .container {
+            max-width: 900px;
+            margin: 50px auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
+            opacity: 0;
+            transform: translateY(30px);
+            animation: fadeInUp 1.5s ease-out forwards;
+        }
+        h1 {
+            font-size: 36px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 18px;
+            color: #666;
+            line-height: 1.6;
+        }
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Cezart – Sztuka Ekskluzywnych Powierzchni</h1>
+        <p>Od ponad dwóch dekad doskonalimy sztukę dekoracyjnych tynków, nadając wnętrzom prestiżowy charakter na rynkach zagranicznych. 
+        Każda powierzchnia, którą tworzymy, to efekt precyzji, doświadczenia i nieustannego dążenia do perfekcji.</p>
+        
+        <p>Rok 2025 otwiera nowy rozdział w naszej historii – z dumą rozpoczynamy działalność w Polsce, przenosząc światowe standardy i kunszt rzemiosła na rodzime przestrzenie. 
+        Łączymy pasję z innowacją, aby każda realizacja była wyrazem luksusu, elegancji i unikalnego stylu.</p>
+
+        <p>Tworzymy nie tylko tynki – kreujemy emocje, nadajemy przestrzeniom charakter i definiujemy ekskluzywność w jej najczystszej formie.</p>
+
+        <p><strong>Zapraszamy do świata Cezart.</strong></p>
+    </div>
+
+</body>
+</html>

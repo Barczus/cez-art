@@ -1,0 +1,143 @@
+
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strona główna</title>
+    <style>
+        body {
+            font-family: 'Roboto', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            text-align: center;
+            padding: 40px 20px;
+            background-color: #005f73;
+            color: white;
+        }
+        header h1 {
+            font-size: 36px;
+            margin: 0;
+        }
+        main {
+            padding: 20px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        section {
+            display: flex;
+            flex-wrap: nowrap;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .text {
+            flex: 1 1 50%;
+            padding: 20px;
+        }
+        .text h2 {
+            font-size: 24px;
+            color: #0a9396;
+            margin-bottom: 10px;
+            animation: text-animation 3s ease-in-out infinite alternate;
+        }
+        .text p {
+            font-size: 16px;
+            color: #333;
+            line-height: 1.6;
+        }
+        .image {
+            flex: 1 1 50%;
+            text-align: center;
+        }
+        .image img {
+            width: 100%;
+            max-width: 350px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+        }
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #005f73;
+            color: white;
+            font-size: 14px;
+        }
+        @keyframes text-animation {
+            0% {
+                transform: scale(1);
+                color: #94d2bd;
+            }
+            50% {
+                transform: scale(1.1);
+                color: #e9d8a6;
+            }
+            100% {
+                transform: scale(1);
+                color: #ee9b00;
+            }
+        }
+        @media (max-width: 768px) {
+            section {
+                flex-wrap: wrap;
+            }
+            .text, .image {
+                flex: 1 1 100%;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Wyjątkowe tynki artystyczne, sztuka na Twoich ścianach</h1>
+    </header>
+    <main>
+        <!-- Pierwsza sekcja: tekst po lewej, zdjęcie po prawej -->
+        <section>
+            <div class="text">
+                <h2>Nasza pasja</h2>
+                <p>
+                    Jesteśmy specjalistami od tynków artystycznych, przekształcającymi zwykłe ściany w dzieła sztuki. Z pasją 
+                    i precyzją tworzymy unikalne wzory, dostosowując się do indywidualnych potrzeb naszych klientów.
+                </p>
+            </div>
+            <div class="image">
+                <img src="1.jpeg" alt="Przykład tynków artystycznych 1">
+            </div>
+        </section>
+        <!-- Druga sekcja: zdjęcie po lewej, tekst po prawej -->
+        <section>
+            <div class="image">
+                <img src="2.jpeg" alt="Przykład tynków artystycznych 2">
+            </div>
+            <div class="text">
+                <h2>Ekskluzywne Tynki Artystyczne</h2>
+                <p>
+                    Nasze tynki to gwarancja jakości i niepowtarzalnego stylu w Twoim wnętrzu. Dodaj stylu swoim ścianom 
+                    dzięki naszym wyjątkowym rozwiązaniom!
+                </p>
+            </div>
+        </section>
+        <!-- Trzecia sekcja: tekst po lewej, zdjęcie po prawej -->
+        <section>
+            <div class="text">
+                <h2>Tynki Dekoracyjne</h2>
+                <p>
+                    Specjalizujemy się w wykonywaniu wysokiej jakości tynków dekoracyjnych, które nadadzą unikalny wygląd 
+                    Twoim wnętrzom. Skontaktuj się z nami, by dowiedzieć się więcej!
+                </p>
+            </div>
+            <div class="image">
+                <img src="3.jpeg" alt="Przykład tynków artystycznych 3">
+            </div>
+        </section>
+    </main>
+    <footer>
+        © 2025 Twoja Firma - Wszystkie prawa zastrzeżone
+    </footer>
+</body>
+</html>

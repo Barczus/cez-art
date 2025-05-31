@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nasze Usługi</title>
+    <style>
+        body {
+            font-family: 'Roboto', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #005f73;
+            color: white;
+        }
+        header h1 {
+            font-size: 36px;
+            margin: 0;
+        }
+        main {
+            padding: 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        .gallery-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .image-box {
+            position: relative;
+            overflow: hidden;
+            width: 48%;
+            max-width: 400px;
+            cursor: pointer;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
+        .image-box img {
+            width: 100%;
+            display: block;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .image-box:hover img {
+            transform: scale(1.1);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+        }
+        .image-number {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 5px 10px;
+            font-size: 18px;
+            font-weight: bold;
+            color: #333;
+            border-radius: 5px;
+            transition: opacity 0.3s ease;
+            opacity: 0;
+        }
+        .image-box:hover .image-number {
+            opacity: 1;
+        }
+        .info-section {
+            text-align: center;
+            margin-top: 40px;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+        .info-section h2 {
+            color: #0a9396;
+        }
+        .info-section p {
+            font-size: 18px;
+            color: #333;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #005f73;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Nasze Usługi</h1>
+    </header>
+    <main>
+        <div class="gallery-container">
+            <!-- Automatycznie generujemy 20 zdjęć -->
+            <!-- Zdjęcia ułożone w parach 2 na warstwę -->
+            <!-- Każde zdjęcie ma numer w prawym górnym rogu po najechaniu -->
+            <!-- Numeracja od 0001.jpeg do 0020.jpeg -->
+            <script>
+                for (let i = 1; i <= 20; i++) {
+                    let num = String(i).padStart(4, '0'); // Zamienia 1 na 0001 itd.
+                    document.write(`
+                        <div class="image-box">
+                            <img src="${num}.jpeg" alt="Tynk ${num}">
+                            <span class="image-number">Nr: ${num}</span>
+                        </div>
+                    `);
+                }
+            </script>
+        </div>
+
+        <!-- Sekcja informacyjna dla klientów -->
+        <div class="info-section">
+            <h2>Wybierz swój styl!</h2>
+            <p>
+                Każdy klient, który wybierze tynk ze zdjęcia, powinien podać jego numer w formularzu kontaktowym lub telefonicznie.
+            </p>
+        </div>
+    </main>
+    <footer>
+        © 2025 Cez-Art - Wszystkie prawa zastrzeżone
+    </footer>
+</body>
+</html>

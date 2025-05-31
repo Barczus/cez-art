@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu z odnośnikami</title>
+    <style>
+        body {
+            font-family: 'Roboto', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #005f73;
+            color: white;
+        }
+        .animated-text {
+            font-size: 36px;
+            font-weight: bold;
+            display: inline-block;
+            animation: text-animation 3s ease-in-out infinite alternate;
+        }
+        @keyframes text-animation {
+            0% {
+                transform: scale(1);
+                color: #94d2bd;
+            }
+            50% {
+                transform: scale(1.1);
+                color: #e9d8a6;
+            }
+            100% {
+                transform: scale(1);
+                color: #ee9b00;
+            }
+        }
+        nav {
+            background-color: #0a9396;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 10px 0;
+            display: flex;
+            justify-content: center;
+        }
+        li {
+            margin: 0 20px;
+        }
+        a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            padding: 5px 10px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+        a:hover {
+            background-color: #94d2bd;
+            color: #005f73;
+            border-radius: 5px;
+        }
+        iframe {
+            width: 90%;
+            height: 600px;
+            border: 1px solid #ddd;
+            margin: 20px auto;
+            display: block;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+        }
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #005f73;
+            color: white;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <span class="animated-text">Strona firmy Cez-Art Witamy</span>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#" onclick="showPage('strona-glowna.html')">Strona główna</a></li>
+            <li><a href="#" onclick="showPage('uslugi.html')">Usługi</a></li>
+            <li><a href="#" onclick="showPage('o-nas.html')">O nas</a></li>
+            <li><a href="#" onclick="showPage('kontakt.html')">Kontakt</a></li>
+        </ul>
+    </nav>
+    <iframe id="content-frame" src="strona-glowna.html"></iframe>
+    <footer>
+        © 2025 Twoja Firma - Wszystkie prawa zastrzeżone
+    </footer>
+    <script>
+        function showPage(page) {
+            document.getElementById('content-frame').src = page;
+        }
+    </script>
+</body>
+</html>
